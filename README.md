@@ -19,6 +19,7 @@ This repo contains a basic Express backend and an Expo React Native frontend.
    ```
 
 Environment variables can be configured by copying `.env.example` to `.env`.
+
 The backend expects a PostgreSQL database. Example configuration:
 
 ```env
@@ -45,10 +46,9 @@ The main entities are:
 - **ExerciseLog** – records sets performed in a session.
 - **SuggestedWorkoutState** – tracks when a muscle group was last trained.
 
-Relationships:
-User → WorkoutSession (1:N), User → ExerciseLog (1:N), WorkoutSession → WorkoutType (N:1),
-Exercise ↔ ExerciseVariation (self relations), and each ExerciseLog references a User,
-WorkoutSession and Exercise.
+Relationships: User → WorkoutSession (1:N), User → ExerciseLog (1:N),
+WorkoutSession → WorkoutType (N:1), Exercise ↔ ExerciseVariation (self relations),
+and each ExerciseLog references a User, WorkoutSession and Exercise.
 
 ## Frontend (`/app/swipe-trainr`)
 
