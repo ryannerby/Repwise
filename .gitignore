@@ -1,0 +1,5 @@
+node_modules/
+app/swipe-trainr/node_modules/
+app/swipe-trainr/.expo/
+api/node_modules/
+api/.env
