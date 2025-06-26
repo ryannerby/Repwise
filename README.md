@@ -64,3 +64,18 @@ and each ExerciseLog references a User, WorkoutSession and Exercise.
    ```bash
    npx expo start
    ```
+
+### Workout UI
+
+The Expo app now includes screens for selecting a workout day and completing a workout with swipe gestures for exercise variations. Components include:
+
+- `WorkoutHeader` displays the day and muscle group.
+- `ExerciseCard` shows an exercise name and looping GIF.
+- `SliderControl` adjusts weight and reps.
+- `SummaryScreen` gives a simple completion message.
+
+Navigate between screens using React Navigation:
+
+```bash
+npm start
+```
